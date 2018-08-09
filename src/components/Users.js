@@ -4,7 +4,7 @@ import { connect } from 'react-redux';
 class Users extends Component {
 
   render() {
-    let users = this.props.users.map((user,i) => <li key={index}>{user.userName}</li>);
+    let users = this.props.users.map((user,i) => <li key={i}>{user.userName}</li>);
     return (
       <div>
         <ul>
