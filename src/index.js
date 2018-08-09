@@ -9,10 +9,14 @@ import manageUsers from './reducers/manageUsers'
 import { createStore } from 'redux';
 import { Provider } from 'react-redux';
 
+const store = createStore(
+  manageUsers, 
+  window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
+);
+
 ReactDOM.render(
-  // add imports and code
-  <App />
-  // add imports and code
-  ,
+  <Provider store={store}>
+    <App store={store}/>
+  </Provider>,
   document.getElementById('root')
 );
