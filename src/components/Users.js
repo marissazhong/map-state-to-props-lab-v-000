@@ -4,10 +4,11 @@ import { connect } from 'react-redux';
 class Users extends Component {
 
   render() {
+    let users = this.props.users.map((user,i) => <li>{user.userName}</li>)
     return (
       <div>
         <ul>
-          {this.props.users.map((user,i) => <li>{user.userName}</li>)};
+          {users};
         </ul>
       </div>
     )
