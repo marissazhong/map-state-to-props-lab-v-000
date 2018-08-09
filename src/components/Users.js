@@ -7,7 +7,7 @@ class Users extends Component {
     return (
       <div>
         <ul>
-          {this.users}
+          {this.props.users}
         </ul>
       </div>
     )
