@@ -8,7 +8,7 @@ class Users extends Component {
     return (
       <div>
         <ul>
-          {users};
+          {users}
         </ul>
       </div>
     )
